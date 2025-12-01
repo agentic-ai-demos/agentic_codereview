@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "summary": "Brief summary of the steps and what you are trying to achieve.",
+  "steps": [
+    {
+      "name": "step1",
+      "description": "Describe the first step in detail. If any tool is used, mention the tool name and parameters. If more context is needed for the code to be reviewed, like caller or callee or function references, mention the tool to be used to get that context as given in tools schema YAML. Example below.",
+      "tools": [
+        {
+          "name": "ast_mcp_tools",
+          "function": "get_function_context_for_project_mcp",
+          "parameters": {
+            "github_repo": "https://github.com/huggingface/accelerate",
+            "function_name": "example_function"
+          }
+        }
+      ],
+      "tool_results" : "Results from the tool execution can be captured here to be used in subsequent steps.Will be filled in by the agent during execution."
+    },
+    {
+      "name": "step2",
+      "description": "Second step description. If no tool is used, just describe the step. Continue for all steps needed for the code review."
+    }
+  ]
+}
